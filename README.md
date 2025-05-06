@@ -45,3 +45,11 @@ AWS_ACCESS_KEY_ID=your_aws_access_key
 AWS_SECRET_ACCESS_KEY=your_aws_secret_key
 AWS_REGION=your_s3_bucket_region
 AWS_BUCKET_NAME=your_s3_bucket_name
+
+🌐 Frontend Repo
+Sora Drive frontend (deployed on Vercel):
+👉 Frontend Repository
+
+👨‍💻 Author
+Built by Usama as part of the Sora Union Full Stack Assignment.
+💼 LinkedIn | 🧑‍💻 GitHub

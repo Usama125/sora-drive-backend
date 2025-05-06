@@ -3,11 +3,17 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const serviceAccount = require(process.env.FIREBASE_ADMIN_SDK);
-
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  storageBucket: "your-project-id.appspot.com", // Optional: if using Firebase Storage
-});
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert({
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, "\n"),
+      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+      privateKeyId: process.env.FIREBASE_PRIVATE_KEY_ID,
+      clientId: process.env.FIREBASE_CLIENT_ID,
+    }),
+    storageBucket: process.env.FIREBASE_BUCKET, // optional
+  });
+}
 
 module.exports = admin;
