@@ -37,18 +37,11 @@ Sora Drive is a cloud-based file management system. This backend is built using 
 Create a `.env` file with:
 
 ```env
-PORT=5000
+PORT=3001
+FIREBASE_ADMIN_SDK=firebase-service-account.json file path
 MONGO_URI=your_mongodb_uri
 
-AWS_REGION=your_aws_region
-AWS_BUCKET_NAME=your_bucket_name
 AWS_ACCESS_KEY_ID=your_aws_access_key
 AWS_SECRET_ACCESS_KEY=your_aws_secret_key
-
-FIREBASE_TYPE=service_account
-FIREBASE_PROJECT_ID=your_firebase_project_id
-FIREBASE_PRIVATE_KEY_ID=your_key_id
-FIREBASE_PRIVATE_KEY="your_private_key" # Must wrap in quotes
-FIREBASE_CLIENT_EMAIL=your_firebase_client_email
-FIREBASE_CLIENT_ID=your_firebase_client_id
-FIREBASE_STORAGE_BUCKET=your_storage_bucket
+AWS_REGION=your_s3_bucket_region
+AWS_BUCKET_NAME=your_s3_bucket_name
