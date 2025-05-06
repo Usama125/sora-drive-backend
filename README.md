@@ -32,24 +32,6 @@ Sora Drive is a cloud-based file management system. This backend is built using 
 
 ---
 
-## 📁 Folder Structure
-
-sora-drive-backend/
-├── controllers/ # API logic
-├── firebase/ # Firebase admin initialization
-├── lib/ # AWS S3 utilities
-├── middleware/ # Auth middleware
-├── models/ # MongoDB schemas
-├── routes/ # API routes
-├── uploads/ # Local (if needed)
-├── .env # Env variables (excluded in Git)
-├── firebase-service-account.json # Firebase key (excluded in Git)
-├── app.js # Entry point
-└── package.json
-
-
----
-
 ## ⚙️ Environment Variables
 
 Create a `.env` file with:
